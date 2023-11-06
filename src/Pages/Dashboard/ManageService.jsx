@@ -1,8 +1,7 @@
-
 const ManageService = () => {
     return (
         <div>
-            
+            this is mangee service            
         </div>
     );
 };

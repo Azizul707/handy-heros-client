@@ -5,6 +5,9 @@ import Services from '../Pages/Services/Services';
 import Dashboard from '../Pages/Dashboard/Dashboard';
 import Login from '../Components/Login/Login';
 import Register from '../Components/Register/Register';
+import AddService from '../Pages/Dashboard/AddService';
+import ManageService from '../Pages/Dashboard/ManageService';
+import MySchedule from '../Pages/Dashboard/MySchedule';
 
 const MainRoutes = createBrowserRouter( [
     {
@@ -21,7 +24,7 @@ const MainRoutes = createBrowserRouter( [
             },
             {
                 path: 'dashboard',
-                element:<Dashboard></Dashboard>
+                element: <Dashboard></Dashboard>,
             },
             {
                 path: 'login',
@@ -30,7 +33,20 @@ const MainRoutes = createBrowserRouter( [
             {
                 path: 'register',
                 element:<Register/>
+            },
+            {
+                path: 'add-service',
+                element:<AddService/>
+            },
+            {
+                path: 'manage-service',
+                element:<ManageService/>
+            },
+            {
+                path: 'my-schedule',
+                element:<MySchedule/>
             }
+           
         ]
 
 

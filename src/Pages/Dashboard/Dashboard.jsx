@@ -3,44 +3,48 @@ import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Auth/AuthProvider';
 
 const Dashboard = () => {
-    const { user } = useContext( AuthContext );
+    const { user } = useContext(AuthContext);
 
-    const [ isMenuOpen, setIsMenuOpen ] = useState( false );
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen( !isMenuOpen );
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     };
 
     return (
         <div>
             <ul>
-                { user && (
-                    <li onClick={ toggleMenu }>
-                        <NavLink to="/dashboard" className={ ( {isActive} ) =>  isActive ? 'text-blue-600' : ''  }>
+                {user && (
+                    <li onClick={toggleMenu}>
+                        <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'text-blue-600' : ''}>
                             Dashboard
                         </NavLink>
                     </li>
-                ) }
+                )}
                 <li>
-                    { isMenuOpen && (
-                        <ul className=' absolute md:top-20 shadow-lg w-52 py-5 right-[26rem] text-center'>
-                            <li>
-                                <NavLink to="/add-service" className={ ( {isActive} ) =>  isActive ? 'text-blue-600' : 'text-black hover:bg-blue-600 py-1 px-10 hover:text-white'  }>
+                    {isMenuOpen && (
+                        <ul className='absolute md:top-20 shadow-lg w-52 py-5 right-[26rem] text-center z-50 bg-white'>
+                            <li onClick={closeMenu}>
+                                <NavLink to="/add-service" className='text-black hover:bg-blue-600 py-1 px-10 hover:text-white'>
                                     Add a Service
                                 </NavLink>
                             </li>
-                            <li>
-                                <NavLink to="/manage-service" className={ ( {isActive} ) =>  isActive ? 'text-blue-600' : 'text-black hover:bg-blue-600 py-1 px-10 hover:text-white'  }>
+                            <li onClick={closeMenu}>
+                                <NavLink to="/manage-service" className='text-black hover:bg-blue-600 py-1 px-10 hover:text-white'>
                                     Manage Service
                                 </NavLink>
                             </li>
-                            <li>
-                                <NavLink to="/my-schedule" className={ ( {isActive} ) =>  isActive ? 'text-blue-600' : 'text-black hover:bg-blue-600 py-1 px-10 hover:text-white'  }>
+                            <li onClick={closeMenu}>
+                                <NavLink to="/my-schedule" className='text-black hover:bg-blue-600 py-1 px-10 hover:text-white'>
                                     My Schedule
                                 </NavLink>
                             </li>
                         </ul>
-                    ) }
+                    )}
                 </li>
             </ul>
         </div>

@@ -1,0 +1,160 @@
+  [
+    {
+      "ServiceCategory": "Furniture Assembly",
+      "ServiceImage": "https://example.com/furniture_assemble.jpg",
+      "ServiceName": "Furniture Assembly Pro",
+      "ServiceDescription": "Expert furniture assembly services.",
+      "ServiceProvider": {
+        "Image": "https://example.com/furniture_assemble_pro1.jpg",
+        "Name": "John's Furniture Assembly",
+        "Email": "john@example.com"
+      },
+      "ServicePrice": 50,
+      "ServiceLocation": "New York, NY"
+    },
+    {
+      "ServiceCategory": "Furniture Assembly",
+      "ServiceImage": "https://example.com/furniture_assemble.jpg",
+      "ServiceName": "Furniture Assembly Masters",
+      "ServiceDescription": "Professional furniture assembly solutions.",
+      "ServiceProvider": {
+        "Image": "https://example.com/furniture_assemble_pro2.jpg",
+        "Name": "Laura's Assembly Experts",
+        "Email": "laura@example.com"
+      },
+      "ServicePrice": 45,
+      "ServiceLocation": "Los Angeles, CA"
+    },
+    {
+      "ServiceCategory": "Help Moving",
+      "ServiceImage": "https://example.com/help_moving.jpg",
+      "ServiceName": "Efficient Moving Services",
+      "ServiceDescription": "Reliable help for your moving needs.",
+      "ServiceProvider": {
+        "Image": "https://example.com/help_moving_pro1.jpg",
+        "Name": "MoveIt Movers",
+        "Email": "moveit@example.com"
+      },
+      "ServicePrice": 75,
+      "ServiceLocation": "Chicago, IL"
+    },
+    {
+      "ServiceCategory": "Help Moving",
+      "ServiceImage": "https://example.com/help_moving.jpg",
+      "ServiceName": "Quick Move Solutions",
+      "ServiceDescription": "Swift and hassle-free moving assistance.",
+      "ServiceProvider": {
+        "Image": "https://example.com/help_moving_pro2.jpg",
+        "Name": "Smooth Movers Inc.",
+        "Email": "smooth@example.com"
+      },
+      "ServicePrice": 65,
+      "ServiceLocation": "Houston, TX"
+    },
+    {
+      "ServiceCategory": "Home Cleaning",
+      "ServiceImage": "https://example.com/home_cleaning.jpg",
+      "ServiceName": "Spotless Cleaning Services",
+      "ServiceDescription": "Thorough and reliable home cleaning.",
+      "ServiceProvider": {
+        "Image": "https://example.com/home_cleaning_pro1.jpg",
+        "Name": "Clean Sweep Cleaners",
+        "Email": "clean@example.com"
+      },
+      "ServicePrice": 60,
+      "ServiceLocation": "San Francisco, CA"
+    },
+    {
+      "ServiceCategory": "Home Cleaning",
+      "ServiceImage": "https://example.com/home_cleaning.jpg",
+      "ServiceName": "Maid to Perfection",
+      "ServiceDescription": "Professional house cleaning services.",
+      "ServiceProvider": {
+        "Image": "https://example.com/home_cleaning_pro2.jpg",
+        "Name": "Shiny Homes Cleaning",
+        "Email": "shiny@example.com"
+      },
+      "ServicePrice": 55,
+      "ServiceLocation": "Miami, FL"
+    },
+    {
+      "ServiceCategory": "Photography",
+      "ServiceImage": "https://example.com/photography.jpg",
+      "ServiceName": "Captured Moments Photography",
+      "ServiceDescription": "Preserving your special moments.",
+      "ServiceProvider": {
+        "Image": "https://example.com/photography_pro1.jpg",
+        "Name": "Focus Photography Studios",
+        "Email": "focus@example.com"
+      },
+      "ServicePrice": 80,
+      "ServiceLocation": "Los Angeles, CA"
+    },
+    {
+      "ServiceCategory": "Photography",
+      "ServiceImage": "https://example.com/photography.jpg",
+      "ServiceName": "LensCrafted Photography",
+      "ServiceDescription": "Creative and professional photography services.",
+      "ServiceProvider": {
+        "Image": "https://example.com/photography_pro2.jpg",
+        "Name": "Picture Perfect Photographers",
+        "Email": "picture@example.com"
+      },
+      "ServicePrice": 70,
+      "ServiceLocation": "New York, NY"
+    },
+    {
+      "ServiceCategory": "Electrical Help",
+      "ServiceImage": "https://example.com/electrical_help.jpg",
+      "ServiceName": "Wired Up Electricians",
+      "ServiceDescription": "Electrical solutions you can trust.",
+      "ServiceProvider": {
+        "Image": "https://example.com/electrical_help_pro1.jpg",
+        "Name": "PowerTech Electric",
+        "Email": "powertech@example.com"
+      },
+      "ServicePrice": 90,
+      "ServiceLocation": "Dallas, TX"
+    },
+    {
+      "ServiceCategory": "Electrical Help",
+      "ServiceImage": "https://example.com/electrical_help.jpg",
+      "ServiceName": "Bright Sparks Electric",
+      "ServiceDescription": "Expert electrical services for your needs.",
+      "ServiceProvider": {
+        "Image": "https://example.com/electrical_help_pro2.jpg",
+        "Name": "ElectroWise Solutions",
+        "Email": "electrowise@example.com"
+      },
+      "ServicePrice": 85,
+      "ServiceLocation": "Chicago, IL"
+    },
+    {
+      "ServiceCategory": "Minor Plumbing Repairs",
+      "ServiceImage": "https://example.com/plumbing_repairs.jpg",
+      "ServiceName": "Leak Busters Plumbing",
+      "ServiceDescription": "Fixing plumbing issues quickly and efficiently.",
+      "ServiceProvider": {
+        "Image": "https://example.com/plumbing_repairs_pro1.jpg",
+        "Name": "PlumbRight Plumbers",
+        "Email": "plumbright@example.com"
+      },
+      "ServicePrice": 70,
+      "ServiceLocation": "Houston, TX"
+    },
+    {
+      "ServiceCategory": "Minor Plumbing Repairs",
+      "ServiceImage": "https://example.com/plumbing_repairs.jpg",
+      "ServiceName": "SwiftFlow Plumbing Services",
+      "ServiceDescription": "Prompt solutions for minor plumbing problems.",
+      "ServiceProvider": {
+        "Image": "https://example.com/plumbing_repairs_pro2.jpg",
+        "Name": "AquaFix Plumbing",
+        "Email": "aquafix@example.com"
+      },
+      "ServicePrice": 65,
+      "ServiceLocation": "Miami, FL"
+    }
+  ]
+  
+  
