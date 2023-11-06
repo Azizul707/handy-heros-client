@@ -1,160 +1,182 @@
-  [
-    {
-      "ServiceCategory": "Furniture Assembly",
-      "ServiceImage": "https://example.com/furniture_assemble.jpg",
-      "ServiceName": "Furniture Assembly Pro",
-      "ServiceDescription": "Expert furniture assembly services.",
-      "ServiceProvider": {
-        "Image": "https://example.com/furniture_assemble_pro1.jpg",
-        "Name": "John's Furniture Assembly",
-        "Email": "john@example.com"
-      },
-      "ServicePrice": 50,
-      "ServiceLocation": "New York, NY"
-    },
-    {
-      "ServiceCategory": "Furniture Assembly",
-      "ServiceImage": "https://example.com/furniture_assemble.jpg",
-      "ServiceName": "Furniture Assembly Masters",
-      "ServiceDescription": "Professional furniture assembly solutions.",
-      "ServiceProvider": {
-        "Image": "https://example.com/furniture_assemble_pro2.jpg",
-        "Name": "Laura's Assembly Experts",
-        "Email": "laura@example.com"
-      },
-      "ServicePrice": 45,
-      "ServiceLocation": "Los Angeles, CA"
-    },
-    {
-      "ServiceCategory": "Help Moving",
-      "ServiceImage": "https://example.com/help_moving.jpg",
-      "ServiceName": "Efficient Moving Services",
-      "ServiceDescription": "Reliable help for your moving needs.",
-      "ServiceProvider": {
-        "Image": "https://example.com/help_moving_pro1.jpg",
-        "Name": "MoveIt Movers",
-        "Email": "moveit@example.com"
-      },
-      "ServicePrice": 75,
-      "ServiceLocation": "Chicago, IL"
-    },
-    {
-      "ServiceCategory": "Help Moving",
-      "ServiceImage": "https://example.com/help_moving.jpg",
-      "ServiceName": "Quick Move Solutions",
-      "ServiceDescription": "Swift and hassle-free moving assistance.",
-      "ServiceProvider": {
-        "Image": "https://example.com/help_moving_pro2.jpg",
-        "Name": "Smooth Movers Inc.",
-        "Email": "smooth@example.com"
-      },
-      "ServicePrice": 65,
-      "ServiceLocation": "Houston, TX"
-    },
-    {
-      "ServiceCategory": "Home Cleaning",
-      "ServiceImage": "https://example.com/home_cleaning.jpg",
-      "ServiceName": "Spotless Cleaning Services",
-      "ServiceDescription": "Thorough and reliable home cleaning.",
-      "ServiceProvider": {
-        "Image": "https://example.com/home_cleaning_pro1.jpg",
-        "Name": "Clean Sweep Cleaners",
-        "Email": "clean@example.com"
-      },
-      "ServicePrice": 60,
-      "ServiceLocation": "San Francisco, CA"
-    },
-    {
-      "ServiceCategory": "Home Cleaning",
-      "ServiceImage": "https://example.com/home_cleaning.jpg",
-      "ServiceName": "Maid to Perfection",
-      "ServiceDescription": "Professional house cleaning services.",
-      "ServiceProvider": {
-        "Image": "https://example.com/home_cleaning_pro2.jpg",
-        "Name": "Shiny Homes Cleaning",
-        "Email": "shiny@example.com"
-      },
-      "ServicePrice": 55,
-      "ServiceLocation": "Miami, FL"
-    },
-    {
-      "ServiceCategory": "Photography",
-      "ServiceImage": "https://example.com/photography.jpg",
-      "ServiceName": "Captured Moments Photography",
-      "ServiceDescription": "Preserving your special moments.",
-      "ServiceProvider": {
-        "Image": "https://example.com/photography_pro1.jpg",
-        "Name": "Focus Photography Studios",
-        "Email": "focus@example.com"
-      },
-      "ServicePrice": 80,
-      "ServiceLocation": "Los Angeles, CA"
-    },
-    {
-      "ServiceCategory": "Photography",
-      "ServiceImage": "https://example.com/photography.jpg",
-      "ServiceName": "LensCrafted Photography",
-      "ServiceDescription": "Creative and professional photography services.",
-      "ServiceProvider": {
-        "Image": "https://example.com/photography_pro2.jpg",
-        "Name": "Picture Perfect Photographers",
-        "Email": "picture@example.com"
-      },
-      "ServicePrice": 70,
-      "ServiceLocation": "New York, NY"
-    },
-    {
-      "ServiceCategory": "Electrical Help",
-      "ServiceImage": "https://example.com/electrical_help.jpg",
-      "ServiceName": "Wired Up Electricians",
-      "ServiceDescription": "Electrical solutions you can trust.",
-      "ServiceProvider": {
-        "Image": "https://example.com/electrical_help_pro1.jpg",
-        "Name": "PowerTech Electric",
-        "Email": "powertech@example.com"
-      },
-      "ServicePrice": 90,
-      "ServiceLocation": "Dallas, TX"
-    },
-    {
-      "ServiceCategory": "Electrical Help",
-      "ServiceImage": "https://example.com/electrical_help.jpg",
-      "ServiceName": "Bright Sparks Electric",
-      "ServiceDescription": "Expert electrical services for your needs.",
-      "ServiceProvider": {
-        "Image": "https://example.com/electrical_help_pro2.jpg",
-        "Name": "ElectroWise Solutions",
-        "Email": "electrowise@example.com"
-      },
-      "ServicePrice": 85,
-      "ServiceLocation": "Chicago, IL"
-    },
-    {
-      "ServiceCategory": "Minor Plumbing Repairs",
-      "ServiceImage": "https://example.com/plumbing_repairs.jpg",
-      "ServiceName": "Leak Busters Plumbing",
-      "ServiceDescription": "Fixing plumbing issues quickly and efficiently.",
-      "ServiceProvider": {
-        "Image": "https://example.com/plumbing_repairs_pro1.jpg",
-        "Name": "PlumbRight Plumbers",
-        "Email": "plumbright@example.com"
-      },
-      "ServicePrice": 70,
-      "ServiceLocation": "Houston, TX"
-    },
-    {
-      "ServiceCategory": "Minor Plumbing Repairs",
-      "ServiceImage": "https://example.com/plumbing_repairs.jpg",
-      "ServiceName": "SwiftFlow Plumbing Services",
-      "ServiceDescription": "Prompt solutions for minor plumbing problems.",
-      "ServiceProvider": {
-        "Image": "https://example.com/plumbing_repairs_pro2.jpg",
-        "Name": "AquaFix Plumbing",
-        "Email": "aquafix@example.com"
-      },
-      "ServicePrice": 65,
-      "ServiceLocation": "Miami, FL"
-    }
-  ]
-  
-  
+[
+  {
+    "ServiceID": 1,
+    "ServiceName": "Home Cleaning",
+    "ServiceDescription": "Professional home cleaning services",
+    "ServiceProvider": "Clean Sweep Cleaners",
+    "ServicePrice": 60,
+    "ServiceLocation": "San Francisco, CA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.royalaltimahousemaid.com/img/banner1.jpg",
+    "ServiceProviderImage": "https://s3.amazonaws.com/cdn.designcrowd.com/blog/82-Cleaning-Logos-for-a-Neat-Brand-Identity/build-in-clean-service-by-userpremiumlogo-brandcrowd.png"
+  },
+  {
+    "ServiceID": 2,
+    "ServiceName": "Electrical Help",
+    "ServiceDescription": "Expert electrical solutions",
+    "ServiceProvider": "PowerTech Electric",
+    "ServicePrice": 90,
+    "ServiceLocation": "Dallas, TX",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://res.cloudinary.com/taskrabbit-com/image/upload/f_auto,q_auto/lunlrk1kx1cr5mvtootl",
+    "ServiceProviderImage": "https://pbs.twimg.com/profile_images/986261506210721792/pUHVDXjy_400x400.jpg"
+  },
+  {
+    "ServiceID": 3,
+    "ServiceName": "Furniture Assembly",
+    "ServiceDescription": "Professional furniture assembly services",
+    "ServiceProvider": "John's Furniture Assembly",
+    "ServicePrice": 50,
+    "ServiceLocation": "New York, NY",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://goloadup.com/wp-content/uploads/2021/09/furniture-assembly-professionals.jpg",
+    "ServiceProviderImage": "https://logos.flamingtext.com/City-Logos/John-Water-Logo.png"
+  },
+  {
+    "ServiceID": 4,
+    "ServiceName": "Help Moving",
+    "ServiceDescription": "Reliable help for your moving needs",
+    "ServiceProvider": "MoveIt Movers",
+    "ServicePrice": 75,
+    "ServiceLocation": "Chicago, IL",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.neighbor.com/storage-blog/wp-content/uploads/2020/11/Older-man-having-people-help-him-move-boxes.jpg",
+    "ServiceProviderImage": "https://production-next-images-cdn.thumbtack.com/i/440736682871742466/width/1024.jpeg"
+  },
+  {
+    "ServiceID": 5,
+    "ServiceName": "Photography",
+    "ServiceDescription": "Preserving your special moments",
+    "ServiceProvider": "Focus Photography Studios",
+    "ServicePrice": 80,
+    "ServiceLocation": "Los Angeles, CA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.iso.org/files/live/sites/isoorg/files/news/News_archive/2019/03/Ref2375/Ref2375.jpg/thumbnails/900x450",
+    "ServiceProviderImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7YeYtvniK5mdo9vQDkAwszj8GNW0b3aGTKLkG7yR_n-qqPewL_Jy_x0_MTPYPiOaImk&usqp=CAU"
+  },
+  {
+    "ServiceID": 6,
+    "ServiceName": "Minor Plumbing Repairs",
+    "ServiceDescription": "Fixing plumbing issues quickly and efficiently",
+    "ServiceProvider": "Leak Busters Plumbing",
+    "ServicePrice": 70,
+    "ServiceLocation": "Houston, TX",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://images.squarespace-cdn.com/content/v1/57d6dbf5ebbd1af76fa218cd/1598480064989-39OBGHVE7MFK7ASO8N1W/plumbing.PNG",
+    "ServiceProviderImage": "https://leak-busters.co.uk/wp-content/uploads/2019/01/Leak-Busters-Logo-1.png"
+  },
+  {
+    "ServiceID": 7,
+    "ServiceName": "Lawn Care",
+    "ServiceDescription": "Professional lawn care and maintenance",
+    "ServiceProvider": "Green Thumb Landscaping",
+    "ServicePrice": 45,
+    "ServiceLocation": "Miami, FL",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://lirp.cdn-website.com/9b682b82/dms3rep/multi/opt/when+to+do+lawn+maintenance-640w.jpeg",
+    "ServiceProviderImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeWD9QIMEGdqtIOlAyzH2FunfjgKvZWed-gL4dK0WV7kkSjwJ17OuAgLJvStWGPgbfuJY&usqp=CAU"
+  },
+  {
+    "ServiceID": 8,
+    "ServiceName": "Car Repair",
+    "ServiceDescription": "Automotive repair and maintenance",
+    "ServiceProvider": "AutoCare Specialists",
+    "ServicePrice": 55,
+    "ServiceLocation": "Denver, CO",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://img.freepik.com/premium-photo/hand-car-mechanic-with-wrench-auto-repair-garage-mechanic-works-engine-car-garage-repair-service-concept-car-inspection-service-car-repair-service_545582-907.jpg",
+    "ServiceProviderImage": "https://marvel-b1-cdn.bc0a.com/f00000000270511/s19525.pcdn.co/wp-content/uploads/2015/07/auto-care-association-logo1.jpg"
+  },
+  {
+    "ServiceID": 9,
+    "ServiceName": "Babysitting",
+    "ServiceDescription": "Caring for your children with love and responsibility",
+    "ServiceProvider": "Kiddie Care Services",
+    "ServicePrice": 30,
+    "ServiceLocation": "Seattle, WA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.citykinder.com/wp-content/uploads/2019/03/How-much-should-I-pay-a-babysitter-590x393.jpg",
+    "ServiceProviderImage": "https://www.shutterstock.com/image-vector/kids-care-logo-design-vector-260nw-1514447090.jpg"
+  },
+  {
+    "ServiceID": 10,
+    "ServiceName": "Cooking Lessons",
+    "ServiceDescription": "Learn to cook delicious meals",
+    "ServiceProvider": "Chef's Delight",
+    "ServicePrice": 40,
+    "ServiceLocation": "Atlanta, GA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.essexresort.com/i/SITE_170315_14300405_91EOU/content/CMS_10022017_111254590_R3HK4/A07CD8A2-D44E-3AEF-DE94D1A92EE1B1B3.JPG",
+    "ServiceProviderImage": "https://i.pinimg.com/originals/8a/39/09/8a3909e217e3ef205580490203c43cc2.png"
+  },
+  {
+    "ServiceName": "Home Cleaning",
+    "ServiceDescription": "Professional home cleaning services",
+    "ServiceProvider": "Crystal Clean Services",
+    "ServicePrice": 60,
+    "ServiceLocation": "San Francisco, CA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.meticulositycleaning.com/wp-content/uploads/2021/05/roseville-cleaning-service-home_orig.jpg",
+    "ServiceProviderImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJQhKQRU3eZ0oWqGSzg-d5a8AQ-kpRTGOEnJpxUuZWVRSMhSg78AMrhAt2MjM_iN5Mw&usqp=CAU"
+  },
+  {
+    "ServiceName": "Electrical Help",
+    "ServiceDescription": "Expert electrical solutions for your home or business.",
+    "ServiceProvider": "WattWizards Electricians",
+    "ServicePrice": 85,
+    "ServiceLocation": "Los Angeles, CA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://i.insider.com/6515d3f698683c0019469ef0?width=700",
+    "ServiceProviderImage": "https://example.com/wattwizards_electricians.jphttps://content.sportslogos.net/logos/6/219/full/852.png"
+  },
+  {
+    "ServiceName": "Furniture Assembly",
+    "ServiceDescription": "Professional furniture assembly services for your convenience.",
+    "ServiceProvider": "EasyBuild Furniture",
+    "ServicePrice": 60,
+    "ServiceLocation": "Chicago, IL",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://storage.googleapis.com/synode-strapi/installation_synode_870x580_4630f65238/installation_synode_870x580_4630f65238.jpeg",
+    "ServiceProviderImage": "https://lh3.googleusercontent.com/ZvvREWMZ-qL4koZddsAhBecAMVB-jKFHC-pAkMNl1-F002rxdAVupgZzEDp9LjoyD4WX05pxI9S0if-Et9sadhxjRFupGOiCQ6hhVZfBNiwws5TJu28oqpBx2xnq1g"
+  },
+  {
+    "ServiceName": "Help Moving",
+    "ServiceDescription": "Reliable assistance for your moving needs, whether local or long-distance.",
+    "ServiceProvider": "MoveNow Movers",
+    "ServicePrice": 100,
+    "ServiceLocation": "Miami, FL",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://res.cloudinary.com/taskrabbit-com/image/upload/c_fill,h_345,w_464/v1629234920/fdraakuvz6bskk6bihfb.jpg",
+    "ServiceProviderImage": "https://movenowu.com/wp-content/uploads/2020/02/MoveNow-University-Logo-Horizontal-400x92px.png"
+  },
+  {
+    "ServiceName": "Photography",
+    "ServiceDescription": "Preserving your special moments through professional photography.",
+    "ServiceProvider": "Snapshot Studios",
+    "ServicePrice": 80,
+    "ServiceLocation": "Los Angeles, CA",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg",
+    "ServiceProviderImage": "https://upload.wikimedia.org/wikipedia/en/b/bb/Snapshot_game_logo.png"
+  },
+  {
+    "ServiceName": "Minor Plumbing Repairs",
+    "ServiceDescription": "Fixing plumbing issues quickly and efficiently.",
+    "ServiceProvider": "PlumbPro Solutions",
+    "ServicePrice": 70,
+    "ServiceLocation": "Houston, TX",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://www.comforttechhvac.com/uploads/1/1/8/9/118959791/plumbing_1_orig.jpg",
+    "ServiceProviderImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0zOjoDH9C34VDEGu2PhFZV1emY_UqqhLPkH_iKM-_v714244-qI-W9j09D2sYQj8OPA&usqp=CAU"
+  },
+  {
+    "ServiceName": "Lawn Care",
+    "ServiceDescription": "Professional lawn care and maintenance for beautiful landscapes.",
+    "ServiceProvider": "James Care Landscaping",
+    "ServicePrice": 45,
+    "ServiceLocation": "Miami, FL",
+    "ServiceStatus": "Available",
+    "ServiceImage": "https://s3.envato.com/files/281040375/DSC02481s123.jpg",
+    "ServiceProviderImage": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lawn-care-logo-design-template-7d25fc9346e9292b9add97d2bc28401d_screen.jpg?ts=1596784958"
+  }
+]

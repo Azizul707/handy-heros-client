@@ -1,3 +1,4 @@
+import CarouselFeature from "../../Components/CarouselFeature";
 import FeaturesTasker from "../../Components/HomeCompo/FeaturesTasker";
 import HeroBanner from "../../Components/HomeCompo/HeroBanner";
 import Inspired from "../../Components/HomeCompo/Inspired";
@@ -18,7 +19,8 @@ const Home = () => {
             </div>
             <HeroBanner />
             <FeaturesTasker />
-            <Inspired/>
+            <Inspired />
+            <CarouselFeature/>
         </div>
     );
 };
