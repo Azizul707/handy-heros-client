@@ -1,10 +1,29 @@
+import { useQuery } from "@tanstack/react-query";
 import CarouselFeature from "../../Components/CarouselFeature";
 import FeaturesTasker from "../../Components/HomeCompo/FeaturesTasker";
 import HeroBanner from "../../Components/HomeCompo/HeroBanner";
 import Inspired from "../../Components/HomeCompo/Inspired";
 
 
+
+
 const Home = () => {
+
+    const { isPending, error, data } = useQuery({
+        queryKey: ['data'],
+        queryFn: () =>
+          fetch('http://localhost:5000/services').then(
+            (res) => res.json(),
+          ),
+      })
+    
+      if (isPending) return 'Loading...'
+    
+      if (error) return 'An error has occurred: ' + error.message
+    
+    console.log(data);
+
+
     return (
         <div className="">
             <div className="relative w-full">
