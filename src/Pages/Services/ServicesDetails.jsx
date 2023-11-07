@@ -1,11 +1,25 @@
+import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 
 const ServicesDetails = () => {
     const { id } = useParams();
-    console.log(id);
+    const { isPending, error, data } = useQuery( {
+        queryKey: [ 'repoData' ],
+        queryFn: () =>
+            fetch( `http://localhost:5000/services/details/${id}` ).then(
+                ( res ) => res.json(),
+            ),
+    } )
+
+    if ( isPending ) return 'Loading...'
+
+    if ( error ) return 'An error has occurred: ' + error.message
+
+    const { _id, ServiceName, ServiceDescription, ServiceProvider, ServicePrice, ServiceLocation, ServiceStatus, ServiceImage, ServiceProviderImage } = data;
+
     return (
         <div>
-           This is service details 
+            Service name {ServiceName}
         </div>
     );
 };

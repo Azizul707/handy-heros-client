@@ -9,6 +9,7 @@ import AddService from '../Pages/Dashboard/AddService';
 import ManageService from '../Pages/Dashboard/ManageService';
 import MySchedule from '../Pages/Dashboard/MySchedule';
 import ServicesDetails from '../Pages/Services/ServicesDetails';
+import PrivateRoute from '../Components/Private/PrivateRoute';
 
 const MainRoutes = createBrowserRouter( [
     {
@@ -25,7 +26,7 @@ const MainRoutes = createBrowserRouter( [
             },
             {
                 path: 'dashboard',
-                element: <Dashboard></Dashboard>,
+                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
             },
             {
                 path: 'login',
@@ -37,19 +38,19 @@ const MainRoutes = createBrowserRouter( [
             },
             {
                 path: 'add-service',
-                element:<AddService/>
+                element:<PrivateRoute><AddService/></PrivateRoute>
             },
             {
                 path: 'manage-service',
-                element:<ManageService/>
+                element:<PrivateRoute><ManageService/></PrivateRoute>
             },
             {
                 path: 'my-schedule',
-                element:<MySchedule/>
+                element:<PrivateRoute><MySchedule/></PrivateRoute>
             },
             {
                 path: 'service-details/:id',
-                element:<ServicesDetails/>
+                element:<PrivateRoute><ServicesDetails/></PrivateRoute>
             }
            
         ]
