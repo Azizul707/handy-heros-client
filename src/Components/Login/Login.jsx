@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Lottie from 'lottie-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from "../../assets/svg/login.json";
 import loginAvatar from "../../assets/svg/login-page.json";
 import { useContext } from 'react';
@@ -8,6 +8,8 @@ import { AuthContext } from '../../Auth/AuthProvider';
 import toast from 'react-hot-toast';
 
 const Login = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const { singIn, googleSingIn } = useContext( AuthContext );
 
@@ -20,6 +22,8 @@ const Login = () => {
         singIn( email, password )
             .then( result => {
                 toast.success( 'Successfully Sing In!' )
+                e.target.reset();
+               navigate(location?.state ? location.state: '/')
 
             } )
             .catch( err => {
