@@ -23,7 +23,7 @@ const NavBar = () => {
     return (
         <div>
 
-            <nav className="bg-white shadow-lg border-gray-200 dark:bg-gray-900">
+            <nav className="bg-white border-b border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-2">
                     <Link href="/" className="flex items-center">
                         <img src="https://imgtr.ee/images/2023/11/04/024528985406d3d1edfa8c9c77f2d4dd.jpeg"
