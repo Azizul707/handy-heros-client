@@ -11,7 +11,7 @@ const AddService = () => {
         const form = e.target;
         const name = e.target.name.value;
         const email = e.target.email.value;
-        const ServiceImage = e.target.image.value;
+        const ServiceImage = e.target.ServiceImage.value;
         const ServiceName = e.target.ServiceName.value;
         const ServiceLocation = e.target.ServiceLocation.value;
         const ServicePrice = e.target.ServicePrice.value;
@@ -20,6 +20,7 @@ const AddService = () => {
 
         const addService = { name,email,ServiceImage,ServiceName,ServiceLocation,ServicePrice,ServiceDescription,ServiceProvider };
 
+       console.log(addService);
 
         fetch( '', {
             method: 'POST',
@@ -53,7 +54,7 @@ const AddService = () => {
                 <div className="md:flex gap-5">
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="password" className="block pb-2 pl-1">Service Name:</label>
-                        <input type="text" placeholder="" className="w-full border rounded"/>
+                        <input type="text" placeholder="" className="w-full border rounded" name="ServiceName"/>
                     </div>
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="password" className="block pb-2 pl-1">Picture URL:</label>
@@ -68,7 +69,7 @@ const AddService = () => {
                     </div>
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="password" className="block pb-2 pl-1">Description:</label>
-                        <input type="text" id="" name="description" className="border rounded px-3 py-2 w-full" required />
+                        <input type="text" id="" name="ServiceDescription" className="border rounded px-3 py-2 w-full" required />
                     </div>
 
                 </div>

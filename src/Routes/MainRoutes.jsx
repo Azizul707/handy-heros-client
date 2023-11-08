@@ -37,15 +37,15 @@ const MainRoutes = createBrowserRouter( [
                 element:<Register/>
             },
             {
-                path: 'add-service',
+                path: 'dashboard/add-service',
                 element:<PrivateRoute><AddService/></PrivateRoute>
             },
             {
-                path: 'manage-service',
+                path: 'dashboard/manage-service',
                 element:<PrivateRoute><ManageService/></PrivateRoute>
             },
             {
-                path: 'my-schedule',
+                path: 'dashboard/my-schedule',
                 element:<PrivateRoute><MySchedule/></PrivateRoute>
             },
             {

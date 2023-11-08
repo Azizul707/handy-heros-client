@@ -6,6 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Auth/AuthProvider";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 
 
@@ -59,36 +60,38 @@ const ServicesDetails = () => {
         const form = e.target;
         const name = e.target.name.value;
         const email = e.target.email.value;
-        const ServiceImage = e.target.image.value;
+        const ServiceImage = e.target.ServiceImage.value;
         const ServiceName = e.target.ServiceName.value;
         const ServiceLocation = e.target.ServiceLocation.value;
         const ServicePrice = e.target.ServicePrice.value;
         const ServiceDescription = e.target.ServiceDescription.value;
         const ServiceProvider = e.target.ServiceProvider.value;
 
-        const addService = { name,email,ServiceImage,ServiceName,ServiceLocation,ServicePrice,ServiceDescription,ServiceProvider };
+        const bookingService = { name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider };
 
+        console.log( bookingService );
         
-
-        fetch( '', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify( addService )
-        } )
-            .then( res => res.json() )
-            .then( data => { console.log( data ) } )
-        toast.success( 'Product Added Successfully' )
-        form.reset();
+        // fetch( 'http://localhost:5000/bookings', {
+        //     method: 'POST',
+        //     headers: {
+        //         'content-type': 'application/json'
+        //     },
+        //     body: JSON.stringify( bookingService )
+            
+        // })
+      
+        axios.post( 'http://localhost:5000/bookings', {bookingService } )
+            .then( res => {
+                console.log( res );
+                toast.success("Purchase Success!")
+            } )
+            .catch( err => {
+                console.log( err );
+                toast.error("Something Went Wrong")
+            } )
+        
+        setIsModalOpen( false );
     }
-    
-
-
-
-
-
-
 
     return (
         <div className="">
@@ -144,11 +147,11 @@ const ServicesDetails = () => {
                     <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70">
                         <div className="mt-10">
                             <div className=" max-w-screen-md mx-auto flex justify-center items-center bg-gray-200 p-5">
-                                <form onSubmit='' className="border px-4 py-10 rounded-lg max-w-5xl mx-auto bg-[#f1f1f1]">
+                                <form onSubmit={handleAddService} className="border px-4 py-10 rounded-lg max-w-5xl mx-auto bg-[#f1f1f1]">
                                     <div className="md:flex gap-5">
                                         <div className="mb-4 md:w-1/2">
                                             <label htmlFor="name" className="block pb-2 pl-1">Name:</label>
-                                            <input type="text" id="name" name="ServiceProvider" className="border rounded px-3 py-2 w-full" readOnly defaultValue={user.displayName} />
+                                            <input type="text" id="name" name="ServiceProvider" className="border rounded px-3 py-2 w-full" readOnly defaultValue={user?.displayName} />
                                         </div>
 
                                         <div className="mb-4 md:w-1/2">
@@ -160,7 +163,7 @@ const ServicesDetails = () => {
                                     <div className="md:flex gap-5">
                                         <div className="mb-4 md:w-1/2">
                                             <label htmlFor="password" className="block pb-2 pl-1">Service Name:</label>
-                                            <input type="text" placeholder="" className="w-full px-3 py-2 border rounded" readOnly defaultValue={ServiceName} />
+                                            <input type="text" placeholder="" className="w-full px-3 py-2 border rounded" readOnly defaultValue={ServiceName} name="ServiceName" />
                                         </div>
                                         <div className="mb-4 md:w-1/2">
                                             <label htmlFor="password" className="block pb-2 pl-1">Picture URL:</label>
@@ -175,7 +178,7 @@ const ServicesDetails = () => {
                                         </div>
                                         <div className="mb-4 md:w-1/2">
                                             <label htmlFor="password" className="block pb-2 pl-1">Instruction:</label>
-                                            <input type="text" id="" name="description" className="border rounded px-3 py-2 w-full" required />
+                                            <input type="text" id="" name="ServiceDescription" className="border rounded px-3 py-2 w-full" required />
                                         </div>
 
                                     </div>
@@ -184,7 +187,7 @@ const ServicesDetails = () => {
                                         <input type="text" id="password" name="ServiceLocation" className="border rounded px-3 py-2 w-full" required defaultValue={ServiceLocation} />
                                     </div>
                                     <div className="">
-                                        <div className="py-5 md:ml-[28rem]"> <input type="submit" value="Add Service" className="bg-blue-500 cursor-pointer text-white rounded px-4 py-2" /></div>
+                                        <div className="py-5 md:ml-[28rem]"> <input type="submit" value="Purchase Now" className="bg-blue-500 cursor-pointer text-white rounded px-4 py-2" /></div>
                                     </div>
 
 
