@@ -10,6 +10,7 @@ import ManageService from '../Pages/Dashboard/ManageService';
 import MySchedule from '../Pages/Dashboard/MySchedule';
 import ServicesDetails from '../Pages/Services/ServicesDetails';
 import PrivateRoute from '../Components/Private/PrivateRoute';
+import PendingWorks from '../Components/PendingWorks';
 
 const MainRoutes = createBrowserRouter( [
     {
@@ -51,6 +52,10 @@ const MainRoutes = createBrowserRouter( [
             {
                 path: 'service-details/:id',
                 element:<PrivateRoute><ServicesDetails/></PrivateRoute>
+            },
+            {
+                path: 'dashboard/pending-work',
+                element:<PendingWorks/>
             }
            
         ]

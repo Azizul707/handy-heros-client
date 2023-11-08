@@ -71,7 +71,7 @@ const ServicesDetails = () => {
         const bookingService = { name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,date };
 
       
-        axios.post( 'http://localhost:5000/bookings', {bookingService } )
+        axios.post( 'http://localhost:5000/bookings', {name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,date } )
             .then( res => {
                 console.log( res );
                 toast.success("Purchase Success!")

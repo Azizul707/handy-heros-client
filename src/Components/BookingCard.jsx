@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
-import {FaMapMarkerAlt} from "react-icons/fa"
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
+const BookingCard = ( { booking } ) => {
 
-const ServiceCard = ( { service } ) => {
-    const { _id, ServiceName, ServiceDescription, ServiceProvider, ServicePrice, ServiceLocation, ServiceImage, ServiceProviderImage } = service;
+    const { _id, ServiceName, ServiceDescription, ServiceProvider, ServicePrice, ServiceLocation, ServiceImage, ServiceProviderImage,date } = booking;
+
     return (
         <div className="">
+            <div className="my-10 grid md:grid-cols-2 items-center">
             <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
                 <img
@@ -25,23 +26,15 @@ const ServiceCard = ( { service } ) => {
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                         { ServiceDescription }
                     </p>
-                    <Link to={ `/service-details/${ _id }` }>
-                        <button className="mt-5 flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                VIEW DETAILS
-                            </span>
-                        </button>
-                    </Link>
-
                 </div>
 
             </div>
-            <div className="rounded-b-lg -mt-5 bg-slate-100 flex items-center justify-around  p-2 max-w-[579px] ">
+            <div className="rounded-lg -mt-2 bg-slate-100 flex items-center justify-around  px-2 max-w-[579px] h-36 ">
                 <div className="flex items-center gap-10">
                     <div className="w-20">
                         <img src={ ServiceProviderImage } alt={ ServiceProvider } className="w-full h-auto object-cover rounded-full" />
                     </div>
-                    <span className="text-gray-700 ml-2 font-semibold">{ ServiceProvider }</span>
+                    <span className="text-gray-700 ml-2 font-semibold">Booking Date: { date }</span>
                 <div className="flex items-center gap-5">
                     <span className="text-blue-600 text-3xl"><FaMapMarkerAlt></FaMapMarkerAlt></span>
                     <span>{ServiceLocation}</span>
@@ -49,7 +42,10 @@ const ServiceCard = ( { service } ) => {
                 </div>
             </div>
         </div>
+        </div>
     );
 };
 
-export default ServiceCard;
+export default BookingCard;
+
+
