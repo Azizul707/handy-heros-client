@@ -29,7 +29,7 @@ const Home = () => {
         <div className="">
             <div className="relative w-full">
                 <img className="opacity-50" src="https://www.mentorcliq.com/wp-content/uploads/2022/02/Onboarding_Mentoring-2-scaled.webp" alt="" />
-                <div className="absolute top-0 left-0 right-0 bottom-0 opacity-24 bg-gradient-to-r from-slate-100  ">
+                <div className="absolute top-0 left-0 right-0 bottom-0 opacity-24 bg-gradient-to-l from-slate-100  ">
                     <div className="absolute top-2 right-5 md:right-10 md:top-20 space-y-14">
                         <h1 className="md:text-6xl font-bold text-blue-500">Seek Assistance <br /> <span className="text-gray-500">Find Joy</span> </h1>
                         <p className="text-xs space-y-0 md:text-xl text-gray-600">Discover the path to happiness <br /> through our supportive community. Join us today and <br /> seek assistance to find joy.</p>

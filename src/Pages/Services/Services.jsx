@@ -30,7 +30,7 @@ const Services = () => {
                 <h1 className="text-center mb-5 text-4xl fort-bold">Find Your Desire Service By Name </h1>
                 <form>
                     <div className="w-full flex justify-center">
-                        <input type="text" placeholder="Search By Service Name" className="w-2/3" />
+                        <input type="text" placeholder="Search By Service Name" className="w-2/3 border px-2" />
                         <button type="submit" className="bg-blue-600 px-4 py-2 text-white ">Search</button>
                    </div>
                 </form>

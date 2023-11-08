@@ -66,19 +66,10 @@ const ServicesDetails = () => {
         const ServicePrice = e.target.ServicePrice.value;
         const ServiceDescription = e.target.ServiceDescription.value;
         const ServiceProvider = e.target.ServiceProvider.value;
+        const date = e.target.date.value;
 
-        const bookingService = { name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider };
+        const bookingService = { name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,date };
 
-        console.log( bookingService );
-        
-        // fetch( 'http://localhost:5000/bookings', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify( bookingService )
-            
-        // })
       
         axios.post( 'http://localhost:5000/bookings', {bookingService } )
             .then( res => {
@@ -172,6 +163,17 @@ const ServicesDetails = () => {
 
                                     </div>
                                     <div className="md:flex gap-5">
+                                    <div className="mb-4 md:w-1/2">
+                                        <label htmlFor="password" className="block pb-2 pl-1">Service Location:</label>
+                                        <input type="text" id="password" name="ServiceLocation" className="border rounded px-3 py-2 w-full" required defaultValue={ ServiceLocation } />
+                                    </div>
+                                        <div className="mb-4 md:w-1/2">
+                                            <label htmlFor="password" className="block pb-2 pl-1">Instruction:</label>
+                                            <input type="date" id="" name="date" className="border rounded px-3 py-2 w-full" required />
+                                        </div>
+
+                                    </div>
+                                    <div className="md:flex gap-5">
                                         <div className="mb-4 md:w-1/2">
                                             <label htmlFor="password" className="block pb-2 pl-1">Price: </label>
                                             <input type="text" name="ServicePrice" className="border rounded px-3 py-2 w-full" required readOnly defaultValue={ServicePrice} />
@@ -182,10 +184,7 @@ const ServicesDetails = () => {
                                         </div>
 
                                     </div>
-                                    <div className="mb-4 md:w-1/2">
-                                        <label htmlFor="password" className="block pb-2 pl-1">Service Location:</label>
-                                        <input type="text" id="password" name="ServiceLocation" className="border rounded px-3 py-2 w-full" required defaultValue={ServiceLocation} />
-                                    </div>
+                                    
                                     <div className="">
                                         <div className="py-5 md:ml-[28rem]"> <input type="submit" value="Purchase Now" className="bg-blue-500 cursor-pointer text-white rounded px-4 py-2" /></div>
                                     </div>

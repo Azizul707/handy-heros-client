@@ -1,9 +1,13 @@
 /* eslint-disable no-unused-vars */
 
+import axios from "axios";
+import { useContext } from "react";
 import toast from "react-hot-toast";
+import { AuthContext } from "../../Auth/AuthProvider";
 
 const AddService = () => {
-    
+
+    const { user } = useContext( AuthContext );
 
     const handleAddService = ( e ) => {
         e.preventDefault();
@@ -18,17 +22,25 @@ const AddService = () => {
         const ServiceDescription = e.target.ServiceDescription.value;
         const ServiceProvider = e.target.ServiceProvider.value;
 
-        const addService = { name,email,ServiceImage,ServiceName,ServiceLocation,ServicePrice,ServiceDescription,ServiceProvider };
-
-       console.log(addService);
-
-        fetch( '', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify( addService )
-        } )
+        const addService = {
+            ServiceName,
+            ServiceDescription,
+            ServiceProvider,
+            ServicePrice,
+            ServiceLocation,
+            ServiceImage,
+            name,
+            email
+        }
+        
+        axios.post( 'http://localhost:5000/services', { ServiceName,
+        ServiceDescription,
+        ServiceProvider,
+        ServicePrice,
+        ServiceLocation,
+        ServiceImage,
+        name,
+        email } )
             .then( res => res.json() )
             .then( data => { console.log( data ) } )
         toast.success( 'Product Added Successfully' )
@@ -42,23 +54,23 @@ const AddService = () => {
                 <div className="md:flex gap-5">
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="name" className="block pb-2 pl-1">Name:</label>
-                        <input type="text" id="name" name="ServiceProvider" className="border rounded px-3 py-2 w-full" required />
+                        <input type="text" id="name" name="ServiceProvider" className="border rounded px-3 py-2 w-full" required defaultValue={user?.displayName} />
                     </div>
 
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="email" className="block pb-2 pl-1">Email:</label>
-                        <input type="email" id="email" name="email" className="border rounded px-3 py-2 w-full" required />
+                        <input type="email" id="email" name="email" className="border rounded px-3 py-2 w-full" required defaultValue={user?.email} />
                     </div>
                 </div>
 
                 <div className="md:flex gap-5">
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="password" className="block pb-2 pl-1">Service Name:</label>
-                        <input type="text" placeholder="" className="w-full border rounded" name="ServiceName"/>
+                        <input type="text" placeholder="" className="w-full border px-3 py-2 rounded" name="ServiceName" />
                     </div>
                     <div className="mb-4 md:w-1/2">
                         <label htmlFor="password" className="block pb-2 pl-1">Picture URL:</label>
-                        <input type="text" name="ServiceImage" className="border rounded px-3 py-2 w-full" required />
+                        <input type="text" name="ServiceImage" className="border rounded px-3 py-2 w-full" required defaultValue={user?.photoURL} />
                     </div>
 
                 </div>
