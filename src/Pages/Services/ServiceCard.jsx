@@ -45,7 +45,7 @@ const ServiceCard = ( { service } ) => {
                     </div>
                     <span className="text-gray-700 ml-2 font-semibold">{ ServiceProvider }</span>
                 <div className="flex items-center gap-5">
-                    <span className="text-blue-600"><FaMapMarkerAlt></FaMapMarkerAlt></span>
+                    <span className="text-blue-600 text-3xl"><FaMapMarkerAlt></FaMapMarkerAlt></span>
                     <span>{ServiceLocation}</span>
                 </div>
                 </div>
