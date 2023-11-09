@@ -14,7 +14,7 @@ const MySchedule = () => {
     const { isPending, error, data } = useQuery({
         queryKey: ['data'],
         queryFn: () =>
-          fetch(`http://localhost:5000/bookings?email=${user?.email}`).then(
+          fetch(`http://localhost:5000/bookings?email=${user?.email}`,{credentials:"include"}).then(
             (res) => res.json(),
           ),
       })
