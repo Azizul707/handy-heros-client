@@ -168,7 +168,8 @@ const ServicesDetails = () => {
                                         <input type="text" id="password" name="ServiceLocation" className="border rounded px-3 py-2 w-full" required defaultValue={ ServiceLocation } />
                                     </div>
                                         <div className="mb-4 md:w-1/2">
-                                            <label htmlFor="password" className="block pb-2 pl-1">Instruction:</label>
+                                            <label htmlFor="date" className="block pb-2 pl-1">
+                                                Date:</label>
                                             <input type="date" id="" name="date" className="border rounded px-3 py-2 w-full" required />
                                         </div>
 
