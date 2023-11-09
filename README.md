@@ -1,8 +1,8 @@
 
 Live Link: https://handy-heroes-b5e4a.firebaseapp.com/
-Here I describing about this project
 
-*********************************Handy Heroes******************************
+
+*********************************Handy Heroes Key Features:******************************
 
 * This is a website for offline service providing website.
 * Here are some offline service are shown by category on the home page.
