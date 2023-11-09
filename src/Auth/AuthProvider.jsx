@@ -41,12 +41,12 @@ const AuthProvider = ( { children } ) => {
             setUser( currentUser );
             setIsLoading( false );
             if ( currentUser ) {
-                axios.post('http://localhost:5000/jwt',loggedUser,{withCredentials:true})
+                axios.post('https://my-handy-heroes-server.vercel.app/jwt',loggedUser,{withCredentials:true})
                     .then( res => {
                     console.log("token",res.data);
                     } )  
             } else {
-                axios.post( 'http://localhost:5000/logout', loggedUser, {
+                axios.post( 'https://my-handy-heroes-server.vercel.app/logout', loggedUser, {
                     withCredentials:true
                 } )
                     .then( res => {

@@ -38,7 +38,7 @@ const ManageServiceCard = ( { service } ) => {
         const updateService = { email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,ServiceProviderImage };
         console.log(updateService,id);
       
-        fetch( `http://localhost:5000/services/${ id }`, { 
+        fetch( `https://my-handy-heroes-server.vercel.app/services/${ id }`, { 
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
@@ -60,7 +60,7 @@ const ManageServiceCard = ( { service } ) => {
 
 
     const handleDelete = ( id ) => {
-        fetch( `http://localhost:5000/services/${ id }`,{
+        fetch( `https://my-handy-heroes-server.vercel.app/services/${ id }`,{
             
             method: "DELETE"
         } )

@@ -33,7 +33,7 @@ const AddService = () => {
             email
         }
         
-        axios.post( 'http://localhost:5000/services', { ServiceName,
+        axios.post( 'https://my-handy-heroes-server.vercel.app/services', { ServiceName,
         ServiceDescription,
         ServiceProvider,
         ServicePrice,

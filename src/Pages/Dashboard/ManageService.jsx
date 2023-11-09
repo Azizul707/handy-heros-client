@@ -8,7 +8,7 @@ const ManageService = () => {
     const { isPending, error, data } = useQuery( {
         queryKey: [ 'data' ],
         queryFn: () =>
-            fetch( `http://localhost:5000/services?email=${user.email}` ).then(
+            fetch( `https://my-handy-heroes-server.vercel.app/services?email=${user.email}` ).then(
                 ( res ) => res.json(),
             ),
     } )

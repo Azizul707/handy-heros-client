@@ -35,7 +35,7 @@ const ServicesDetails = () => {
     const { isPending, error, data } = useQuery( {
         queryKey: [ 'repoData' ],
         queryFn: () =>
-            fetch( `http://localhost:5000/services/details/${ id }` ).then(
+            fetch( `https://my-handy-heroes-server.vercel.app/services/details/${ id }` ).then(
                 ( res ) => res.json(),
             ),
     } )
@@ -71,7 +71,7 @@ const ServicesDetails = () => {
         const bookingService = { name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,date };
 
       
-        axios.post( 'http://localhost:5000/bookings', {name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,date } )
+        axios.post( 'https://my-handy-heroes-server.vercel.app/bookings', {name, email, ServiceImage, ServiceName, ServiceLocation, ServicePrice, ServiceDescription, ServiceProvider,date } )
             .then( res => {
                 console.log( res );
                 toast.success("Purchase Success!")

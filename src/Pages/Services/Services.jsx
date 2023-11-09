@@ -12,7 +12,7 @@ const Services = () => {
     const { isPending, error, data } = useQuery( {
         queryKey: [ 'data' ],
         queryFn: (showMore) =>
-            fetch( 'http://localhost:5000/services' ).then(
+            fetch( 'https://my-handy-heroes-server.vercel.app/services' ).then(
                 ( res ) => res.json(),
             ),
     } )
