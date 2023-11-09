@@ -1,8 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link: https://handy-heroes-b5e4a.firebaseapp.com/
+Here I describing about this project
 
-Currently, two official plugins are available:
+*********************************Handy Heroes******************************
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* This is a website for offline service providing website.
+* Here are some offline service are shown by category on the home page.
+* On the nav bar there are few menus home, service login and logout options.
+* A user can book any offline service by their desire.
+* Also a user can create any service he wanted.
+* User can see his booking services on my booking and he can see the services he added to provide on the manage service route.
+* If any provider want he can delete or update his service status and service details.
+* This is jwt a secured website so the data all secured.
